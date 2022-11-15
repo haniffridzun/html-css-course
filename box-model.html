@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Box Model</title>
+    <style>
+      .page-button {
+        padding-top: 7px;
+        padding-bottom: 7px;
+        margin: 5px 9px;
+      }
+
+      a {
+        margin-left: 3px;
+        margin-right: 3px;
+      }
+
+      .stretch-button {
+        background-color: green;
+        color: white;
+        border: none;
+        padding: 7px 14px;
+        margin: 5px 9px;
+        transition: padding 0.3s;
+      }
+
+      .stretch-button:hover {
+        padding: 21px 28px;
+      }
+
+      .shadow-button {
+        background-color: green;
+        color: white;
+        border: none;
+        padding: 7px 14px;
+        /* margin: 5px 9px 5px 9px; */
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+      }
+
+      .shadow-button:active {
+        /* margin-bottom: 3px; */
+        /* margin-right: 3px; */
+        margin: 2px 0px 0px 2px;
+        box-shadow: none;
+      }
+
+      .expand-button {
+        background-color: green;
+        color: white;
+        border: none;
+        margin-left: 5px;
+        margin-right: 5px;
+        padding: 4px 10px 4px 10px;
+        transition: padding 0.15s, margin 0.15s;
+      }
+
+      .expand-button:hover {
+        padding: 4px 15px 4px 15px;
+        margin-left: 0;
+        margin-right: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="page-button">Back</button>
+    <a href="#">1</a>
+    <a href="#">2</a>
+    <a href="#">3</a>
+    <a href="#">4</a>
+    <a href="#">5</a>
+    <button class="page-button">Next</button>
+    <br />
+    <br />
+    <button class="stretch-button">Stretch</button>
+    <br />
+    <br />
+    <button class="shadow-button">Shadow</button>
+    <br />
+    <br />
+    <button class="expand-button">One</button>
+    <button class="expand-button">Two</button>
+    <button class="expand-button">Three</button>
+  </body>
+</html>
