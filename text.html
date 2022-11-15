@@ -140,6 +140,109 @@
       .arial-link:hover {
         text-decoration: underline;
       }
+
+      .arial-font {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .new-mark,
+      .macbook-pro,
+      .supercharged-mbp,
+      .price-mbp {
+        display: block;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .new-mark {
+        color: rgba(255, 136, 0, 0.863);
+        font-weight: bold;
+        margin-bottom: 8px;
+      }
+
+      .macbook-pro {
+        font-weight: bold;
+        font-size: 21px;
+        margin-bottom: 4px;
+      }
+
+      .supercharged-mbp {
+        font-weight: bold;
+        font-size: 39px;
+        margin-bottom: 10px;
+      }
+
+      .price-mbp {
+      }
+
+      .buy-button {
+        margin: 14px auto 30px auto;
+        display: block;
+        background-color: rgb(60, 60, 253);
+        color: white;
+        padding: 8px 16px;
+        border: none;
+        border-radius: 16px;
+        font-weight: bold;
+      }
+
+      .price-stock {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 40px;
+        margin-right: 0;
+      }
+
+      .currency-stock {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        color: rgb(85, 85, 85);
+        margin-left: 6px;
+      }
+
+      .profit-today {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        color: rgb(0, 100, 0);
+        margin-top: 8px;
+        margin-bottom: 8px;
+        display: block;
+      }
+
+      .after-hours {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        color: rgb(85, 85, 85);
+      }
+
+      .loss-today {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        color: rgb(216, 2, 2);
+      }
+
+      .account-handler {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 18px;
+      }
+
+      .post-author, .time-post {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        color: rgb(90, 90, 90);
+      }
+
+      .content-tweet {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        margin-top: 6px;
+        width: 600px;
+      }
+
+      .tag-account {
+        color: rgb(86, 97, 255);
+        cursor: pointer;
+      }
     </style>
   </head>
   <body>
@@ -152,13 +255,17 @@
       Talking tech and AI on the heels of Google I/O. Also a daily driver phone
       reveal from Google's CEO. Shoutout to Sundar!
     </p>
+
     <br />
     <br />
+    
     <p class="apple-text">
       Shop early for the best selection of holiday favourites.
       <span class="shop-span">Shop now &#62;</span>
     </p>
+    
     <br />
+    
     <p class="tahoma-font">This is Tahoma font</p>
     <br />
     <p class="deals-banner">Biggest Deals of he Year!</p>
@@ -170,10 +277,49 @@
       In this course, we'll learn the skills you need to become a developer.
     </p>
     <button class="verdana-button">Get Started</button>
+
     <br />
     <br />
+    
     <p class="arial-title">Shopping for your business?</p>
     <p class="arial-subtitle">See how Apple at Work can help.</p>
     <p class="arial-link">Learn more &#62;</p>
+    
+    <br />
+    <br />
+    
+    <p class="arial-font">
+      <span class="new-mark">New</span>
+      <span class="macbook-pro">MacBook Pro</span>
+      <span class="supercharged-mbp">Supercharged for pros.</span>
+      <span class="price-mbp">From $1999</span>
+    </p>
+    <button class="arial-font buy-button">Buy</button>
+
+    <br />
+    <br />
+    
+    <p class="arial-font">
+      <div>
+        <span class="price-stock">1,049.61</span>
+        <span class="currency-stock">USD</span>
+      </div>
+      <span class="profit-today">+18.05 (1.75%) today</span>
+      <div>
+        <span class="after-hours">After hours 1,048.00</span>
+        <span class="loss-today">-1.61 (0.15%)</span>
+      </div>
+    </p>
+
+    <br>
+    <br>
+
+    <p>
+      <span class="account-handler">freeCodeCamp.org</span>
+      <span class="post-author">@freeCodeCamp</span>
+      <span class="time-post">1h</span>
+    </p>
+    <p class="content-tweet">As a web developer, you'll want to make your projects easy to use and navigate around.</p>
+    <p class="content-tweet">Here <span class="tag-account">@chp_it</span> outlines the top skills new developers should have.</p>
   </body>
 </html>
