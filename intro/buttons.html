@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buttons</title>
+    <style>
+      .subscribe-button {
+        background-color: rgb(204, 0, 0);
+        color: white;
+        border: none;
+        /* height: 36px; */
+        /* width: 105px; */
+        padding: 11px 16px;
+        vertical-align: top;
+        border-radius: 2px;
+        cursor: pointer;
+        margin-right: 8px;
+        transition: opacity 0.15s;
+      }
+
+      .subscribe-button:hover {
+        opacity: 0.8;
+      }
+
+      .subscribe-button:active {
+        opacity: 0.5;
+      }
+
+      .join-button {
+        background-color: white;
+        color: rgb(6, 95, 212);
+        border-color: rgb(6, 95, 212);
+        border-radius: 2px;
+        border-style: solid;
+        border-width: 1px;
+        /* height: 36px; */
+        /* width: 62px; */
+        padding: 10px 16px;
+        vertical-align: top;
+        cursor: pointer;
+        transition: background-color 0.15s, color 0.15s;
+      }
+
+      .join-button:hover {
+        background-color: rgb(6, 95, 212);
+        color: white;
+      }
+
+      .join-button:active {
+        opacity: 0.6;
+      }
+
+      .tweet-button {
+        color: white;
+        background-color: rgb(29, 155, 240);
+        border: none;
+        border-radius: 18px;
+        /* height: 36px; */
+        /* width: 74px; */
+        padding: 10px 16px;
+        vertical-align: top;
+        font-weight: bold;
+        font-size: 15px;
+        cursor: pointer;
+        margin-left: 8px;
+        cursor: pointer;
+        transition: box-shadow 0.15s;
+      }
+
+      .tweet-button:hover {
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
+      }
+
+      .request-button {
+        color: white;
+        background-color: black;
+        border: none;
+        height: 42px;
+        width: 120px;
+        margin-right: 8px;
+        cursor: pointer;
+        transition: opacity 0.15s;
+      }
+
+      .request-button:hover {
+        opacity: 0.7;
+      }
+
+      .add-button {
+        background-color: rgb(255, 216, 20);
+        border: none;
+        border-radius: 20px;
+        height: 36px;
+        width: 160px;
+        font-size: 14px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.15s;
+      }
+
+      .add-button:hover {
+        background-color: rgb(240, 203, 17);
+      }
+
+      .signup-button {
+        color: white;
+        background-color: rgb(46, 164, 79);
+        border: none;
+        border-radius: 6px;
+        height: 38px;
+        width: 92px;
+        font-size: 15px;
+        font-weight: bold;
+        margin-left: 8px;
+        cursor: pointer;
+      }
+
+      .signup-button:hover {
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
+      }
+
+      .start-button {
+        color: white;
+        background-color: rgb(121, 82, 179);
+        border: none;
+        border-radius: 4px;
+        height: 48px;
+        width: 125px;
+        font-weight: bold;
+        font-size: 15px;
+        cursor: pointer;
+        transition: background-color 0.15s;
+      }
+
+      .start-button:hover {
+        background-color: rgb(106, 73, 156);
+      }
+
+      .download-button {
+        background-color: white;
+        color: rgb(108, 117, 125);
+        border-width: 1px;
+        border-radius: 4px;
+        border-color: rgb(108, 117, 125);
+        border-style: solid;
+        height: 48px;
+        width: 128px;
+        font-weight: bold;
+        font-size: 15px;
+        margin-left: 8px;
+        cursor: pointer;
+        transition: background-color 0.15s, color 0.15s;
+      }
+
+      .download-button:hover {
+        background-color: rgb(108, 117, 125);
+        color: white;
+      }
+
+      .apply-button {
+        color: white;
+        background-color: rgb(10, 102, 194);
+        height: 46px;
+        width: 280px;
+        border: none;
+        border-radius: 23px;
+        font-weight: 800;
+        font-size: 15px;
+        cursor: pointer;
+        transition: background-color 0.15s;
+      }
+
+      .apply-button:hover {
+        background-color: rgb(10, 91, 172);
+      }
+
+      .save-button {
+        background-color: white;
+        color: rgb(10, 102, 194);
+        font-size: 15px;
+        font-weight: 800;
+        border-width: 1px;
+        border-color: rgb(10, 102, 194);
+        border-style: solid;
+        height: 46px;
+        width: 84px;
+        border-radius: 23px;
+        margin-left: 8px;
+        cursor: pointer;
+        transition: border-width 0.15s, background-color 0.15s;
+      }
+
+      .save-button:hover {
+        border-width: 2px;
+        background-color: rgba(10, 102, 194, 0.15);
+      }
+    </style>
+  </head>
+  <body>
+    <button class="subscribe-button">SUBSCRIBE</button>
+    <button class="join-button">JOIN</button>
+    <button class="tweet-button">Tweet</button>
+    <br />
+    <br />
+    <button class="request-button">Request now</button>
+    <button class="add-button">Add to Cart</button>
+    <button class="signup-button">Sign up</button>
+    <br />
+    <br />
+    <button class="start-button">Get started</button>
+    <button class="download-button">Download</button>
+    <br />
+    <br />
+    <button class="apply-button">Apply on company website</button>
+    <button class="save-button">Save</button>
+  </body>
+</html>
