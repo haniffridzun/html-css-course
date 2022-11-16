@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Images</title>
+    <style>
+      html {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .a7 {
+        width: 200px;
+        border-radius: 10px;
+      }
+
+      .b7 {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        object-position: center;
+      }
+
+      .c7 {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        object-position: right;
+        border-radius: 50%;
+      }
+
+      .d7 {
+        width: 180px;
+        font-size: 18px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: rgb(175, 173, 173);
+        border-radius: 6px;
+        padding: 14px 16px;
+        margin-right: 20px;
+      }
+
+      .e7 {
+        font-size: 14px;
+        width: 350px;
+        padding: 8px 12px;
+        border-style: solid;
+        border-radius: 20px;
+        border-width: 1px;
+        border-color: #dcdcdc;
+        box-shadow: 1px 1px 4px 1px #dcdcdc;
+      }
+
+      .e7:focus-within {
+        outline: none;
+        box-shadow: 1px 1px 2px 1px #e6e4e4;
+      }
+
+      p {
+        color: grey;
+        margin-bottom: 0;
+        font-size: 14px;
+      }
+
+      .email-linkedin {
+        margin-top: 6px;
+        border-width: 2px;
+        border-style: solid;
+        border-radius: 4px;
+        font-size: 14px;
+        padding: 8px 6px;
+        width: 350px;
+      }
+
+      .join-linkedin {
+        background-color: rgb(62, 62, 212);
+        color: white;
+        border: none;
+        border-radius: 30px;
+        font-size: 18px;
+        width: 365px;
+        margin-top: 16px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+      }
+
+      .pic-tweeter {
+        width: 70px;
+        height: 70px;
+        object-fit: cover;
+        object-position: right;
+        border-radius: 50%;
+        vertical-align: middle;
+      }
+
+      .content-tweet {
+        display: inline;
+        font-size: 16px;
+        vertical-align: middle;
+        margin-left: 8px;
+        margin-right: 70px;
+      }
+
+      .button-tweet {
+        background-color: rgb(106, 106, 250);
+        color: white;
+        border: none;
+        border-radius: 30px;
+        font-weight: bold;
+        font-size: 16px;
+        padding: 10px 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <img class="a7" src="grumpy-cat.jpg" alt="" />
+    <img class="b7" src="grumpy-cat.jpg" alt="" />
+    <img class="c7" src="grumpy-cat.jpg" alt="" />
+    <input type="text" placeholder="Search" class="d7" />
+    <input type="text" placeholder="Search Google or type a URL" class="e7" />
+    <br />
+    <br />
+    <p>Email</p>
+    <input type="email" name="" id="" class="email-linkedin" />
+    <p>By clicking Agree & Join, you agree to the Privacy Policy.</p>
+    <button class="join-linkedin">Agree & Join</button>
+    <br />
+    <br />
+    <img src="grumpy-cat.jpg" alt="" class="pic-tweeter" />
+    <p class="content-tweet">What's happening?</p>
+    <button class="button-tweet">Tweet</button>
+  </body>
+</html>
