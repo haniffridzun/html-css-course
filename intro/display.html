@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display</title>
+    <style>
+      input {
+        display: block;
+        margin-bottom: 4px;
+      }
+
+      p {
+        width: 200px;
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      img {
+        width: 200px;
+        margin: 5px auto;
+        display: block;
+      }
+
+      .e7 {
+        font-size: 14px;
+        width: 350px;
+        padding: 8px 12px;
+        border-style: solid;
+        border-radius: 20px;
+        border-width: 1px;
+        border-color: #dcdcdc;
+        box-shadow: 1px 1px 4px 1px #dcdcdc;
+        margin: 5px auto;
+      }
+
+      .e7:focus-within {
+        outline: none;
+        box-shadow: 1px 1px 2px 1px #e6e4e4;
+      }
+
+      .first-name,
+      .last-name,
+      .email {
+        font-size: 14px;
+        padding: 5px 8px;
+        border-radius: 6px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: rgb(172, 171, 171);
+        color: rgb(53, 53, 53);
+        margin-bottom: 8px;
+      }
+
+      .first-name,
+      .last-name {
+        width: 74px;
+        display: inline-block;
+      }
+
+      .sign-up {
+        background-color: rgb(93, 93, 255);
+        color: white;
+        border: none;
+        border-radius: 6px;
+        font-size: 14px;
+        padding: 8px 8px;
+        width: 188px;
+      }
+
+      .uber-ride {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 24px;
+        width: 300px;
+      }
+
+      .pickup-location,
+      .destination {
+        background-color: rgb(240, 240, 240);
+        border: none;
+        padding: 12px 16px;
+        width: 300px;
+        margin-bottom: 6px;
+        font-size: 14px;
+      }
+
+      .request,
+      .schedule {
+        margin-top: 25px;
+        margin-bottom: 40px;
+        border: none;
+        font-size: 14px;
+        padding: 12px 16px;
+        margin-right: 14px;
+      }
+
+      .request {
+        background-color: black;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" placeholder="Name" />
+    <input type="email" name="" id="" placeholder="Email" />
+
+    <br />
+    <br />
+
+    <p>
+      Thanks for chatting with our customer support. Would you like to take our
+      quick survey?
+    </p>
+    <button>Yes</button>
+    <button>No</button>
+
+    <br />
+    <br />
+
+    <img src="google-logo.png" alt="" />
+    <input type="text" placeholder="Search Google or type a URL" class="e7" />
+
+    <br />
+    <br />
+
+    <input type="text" class="first-name" placeholder="First name" />
+    <input type="text" class="last-name" placeholder="Last name" />
+    <input type="email" name="" id="" class="email" placeholder="Email" />
+    <button class="sign-up">Sign Up</button>
+
+    <br />
+    <br />
+
+    <p class="uber-ride">Request a ride now</p>
+    <input
+      type="text"
+      class="pickup-location"
+      placeholder="Enter pickup location"
+    />
+    <input type="text" class="destination" placeholder="Enter destination" />
+    <button class="request">Request now</button>
+    <button class="schedule">Schedule for later</button>
+  </body>
+</html>
