@@ -6,8 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>YouTube Clone</title>
     <style>
+      html {
+        font-family: Arial, Helvetica, sans-serif;
+      }
       .thumbnail {
         width: 300px;
+        display: block;
         /* height: 300px; */
         /* object-fit: contain; */
         /* object-position: bottom; */
@@ -17,12 +21,36 @@
       }
 
       .search-bar {
-        
+        display: block;
+      }
+
+      .video-preview {
+        width: 300px;
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 15px;
       }
     </style>
   </head>
   <body>
-    <img class="thumbnail" src="thumbnails/thumbnail-1.webp" alt="" />
-    <input type="text" placeholder="Search" class="search-bar">
+    <input type="text" placeholder="Search" class="search-bar" />
+
+    <div class="video-preview">
+      <img class="thumbnail" src="thumbnails/thumbnail-1.webp" alt="" />
+      <p class="video-title">
+        Talking Tech and AI with Google CEO Sundar Pichai
+      </p>
+      <p class="video-author">Marques Brownlee</p>
+      <p class="video-stat">3.4M views &#183; 6 months ago</p>
+    </div>
+
+    <div class="video-preview">
+      <img class="thumbnail" src="thumbnails/thumbnail-2.webp" alt="" />
+      <p class="video-title">
+        Try Not To Laugh Challenge #9
+      </p>
+      <p class="video-author">Markiplier</p>
+      <p class="video-stat">19M views &#183; 4 years ago</p>
+    </div>
   </body>
 </html>
