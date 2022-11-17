@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Div Containers</title>
+    <style>
+      html {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .pic-tweeter {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        object-position: right;
+        border-radius: 50%;
+        vertical-align: middle;
+      }
+
+      .content-tweet {
+        display: inline-block;
+        width: 300px;
+        font-size: 16px;
+        vertical-align: middle;
+        margin-left: 8px;
+        margin-right: 8px;
+        color: rgb(116, 115, 115);
+      }
+
+      .button-tweet {
+        display: inline-block;
+        vertical-align: middle;
+        background-color: rgb(106, 106, 250);
+        color: white;
+        border: none;
+        border-radius: 30px;
+        font-weight: bold;
+        font-size: 16px;
+        padding: 10px 16px;
+      }
+
+      .box-tweet {
+        width: 460px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #dcdcdc;
+        border-radius: 8px;
+        padding: 16px 12px;
+        -webkit-box-shadow: 0 0 10px #dcdcdc;
+        /* box-shadow: 2px 2px 2px #dcdcdc; */
+      }
+
+      .card-cat {
+        display: inline-block;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #dcdcdc;
+        -webkit-box-shadow: 0 0 10px #dcdcdc;
+        margin: 10px 5px;
+      }
+
+      .image-cat {
+        width: 195px;
+        height: 210px;
+        object-fit: cover;
+        object-position: center;
+      }
+
+      .name-cat {
+        font-weight: bold;
+        font-size: 18px;
+        margin: 6px 8px;
+      }
+
+      .connection-cat {
+        color: gray;
+        margin: 6px 8px;
+      }
+
+      .add-cat {
+        background-color: rgb(98, 98, 255);
+        color: white;
+        font-size: 16px;
+        border: none;
+        border-radius: 4px;
+        padding: 8px 20px;
+        margin: 4px 8px 10px 8px;
+      }
+
+      .google-logo img {
+        width: 200px;
+        margin: 5px auto;
+        /* display: block; */
+      }
+
+      .e7 {
+        font-size: 14px;
+        width: 350px;
+        padding: 8px 12px;
+        border-style: solid;
+        border-radius: 20px;
+        border-width: 1px;
+        border-color: #dcdcdc;
+        box-shadow: 1px 1px 4px 1px #dcdcdc;
+        margin: 5px auto;
+      }
+
+      .e7:focus-within {
+        outline: none;
+        box-shadow: 1px 1px 2px 1px #e6e4e4;
+      }
+
+      .google-logo,
+      .google-search,
+      .google-button {
+        text-align: center;
+        margin: 10px 10px;
+      }
+
+      .google-button button {
+        background-color: #e6e3e3;
+        font-size: 14px;
+        border: none;
+        padding: 9px 16px;
+        margin: 10px 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box-tweet">
+      <img src="grumpy-cat.jpg" alt="" class="pic-tweeter" />
+      <p class="content-tweet">What's happening?</p>
+      <button class="button-tweet">Tweet</button>
+    </div>
+
+    <br />
+    <br />
+
+    <div class="card-cat">
+      <img src="grumpy-cat.jpg" alt="" class="image-cat" />
+      <p class="name-cat">Oliver</p>
+      <p class="connection-cat">2 mutual friends</p>
+      <button class="add-cat">Add Friend</button>
+    </div>
+
+    <div class="card-cat">
+      <img src="grumpy-cat.jpg" alt="" class="image-cat" />
+      <p class="name-cat">Mimi</p>
+      <p class="connection-cat">50 mutual friends</p>
+      <button class="add-cat">Add Friend</button>
+    </div>
+
+    <div class="card-cat">
+      <img src="grumpy-cat.jpg" alt="" class="image-cat" />
+      <p class="name-cat">Rex</p>
+      <p class="connection-cat">23 mutual friends</p>
+      <button class="add-cat">Add Friend</button>
+    </div>
+
+    <br />
+    <br />
+
+    <div class="google-logo">
+      <img src="google-logo.png" alt="" />
+    </div>
+    <div class="google-search">
+      <input type="text" placeholder="Search Google or type a URL" class="e7" />
+    </div>
+    <div class="google-button">
+      <button>Google Search</button>
+      <button>I'm Feeling Lucky</button>
+    </div>
+  </body>
+</html>
