@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Div Layout</title>
+    <style>
+      html {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      p {
+        margin: 6px 12px;
+      }
+
+      .box-suggest {
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 6px;
+        border-color: #dcdcdc;
+        -webkit-box-shadow: 0 0 10px #dcdcdc;
+        padding: 18px 12px;
+      }
+
+      .account-suggest {
+        margin: 20px 10px;
+      }
+
+      .account-twitter {
+        display: inline-block;
+        width: 300px;
+      }
+
+      .picture-account {
+        width: 70px;
+        height: 70px;
+        object-fit: cover;
+        /* object-position: right; */
+        border-radius: 50%;
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      .summary-account {
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      .name-account {
+        font-weight: bold;
+      }
+
+      .headline-account,
+      .category-account {
+        color: gray;
+      }
+
+      .follow-account {
+        display: inline-block;
+      }
+
+      .button-follow {
+        background-color: rgb(64, 122, 247);
+        color: white;
+        font-weight: bold;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        padding: 12px 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box-suggest">
+      <div class="account-suggest">
+        <div class="account-twitter">
+          <img src="grumpy-cat.jpg" alt="" class="picture-account" />
+          <div class="summary-account">
+            <p class="name-account">Oliver</p>
+            <p class="headline-account">the cat</p>
+            <p class="category-account">Popular</p>
+          </div>
+        </div>
+        <div class="follow-account">
+          <button class="button-follow">Follow</button>
+        </div>
+      </div>
+
+      <div class="account-suggest">
+        <div class="account-twitter">
+          <img src="grumpy-cat.jpg" alt="" class="picture-account" />
+          <div class="summary-account">
+            <p class="name-account">Mimi</p>
+            <p class="headline-account">Sleepy cat</p>
+            <p class="category-account">Popular</p>
+          </div>
+        </div>
+        <div class="follow-account">
+          <button class="button-follow">Follow</button>
+        </div>
+      </div>
+
+      <div class="account-suggest">
+        <div class="account-twitter">
+          <img src="grumpy-cat.jpg" alt="" class="picture-account" />
+          <div class="summary-account">
+            <p class="name-account">Rex</p>
+            <p class="headline-account">Happy bulldog</p>
+            <p class="category-account">Popular</p>
+          </div>
+        </div>
+        <div class="follow-account">
+          <button class="button-follow">Follow</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
