@@ -11,17 +11,99 @@
 }
 
 .left-section {
-  background-color: lightblue;
-  width: 150px;
+  /* background-color: lightblue; */
+  /* width: 150px; */
+  display: flex;
+  align-items: center;
 }
+
+.hamburger-menu {
+  height: 24px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.youtube-logo {
+  height: 20px;
+}
+
 .middle-section {
-  background-color: lightpink;
+  /* background-color: lightpink; */
+  max-width: 500px;
   flex: 1;
   margin-left: 70px;
   margin-right: 35px;
-  max-width: 500px;
+  display: flex;
+  align-items: center;
 }
+
+.search-bar {
+  width: 0;
+  flex: 1;
+  height: 36px;
+  padding-left: 10px;
+  font-size: 16px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: lightgray;
+  border-radius: 2px;
+  box-shadow: inset 1px 2px 2px rgba(0, 0, 0, 0.07);
+}
+.search-bar::placeholder {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+.search-button {
+  height: 40px;
+  width: 66px;
+  background-color: rgb(245, 245, 245);
+  display: flex;
+  align-items: center;
+  border-style: solid;
+  border-width: 1px;
+  border-color: lightgray;
+  margin-left: -1px;
+}
+.search-icon {
+  height: 25px;
+  flex: 1;
+}
+
+.voice-search-button {
+  height: 40px;
+  width: 40px;
+  background-color: rgb(245, 245, 245);
+  border: none;
+  border-radius: 50%;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+}
+.voice-search-icon {
+  /* height: 25px; */
+  flex: 1;
+}
+
 .right-section {
-  background-color: lightblue;
-  width: 200px;
+  /* background-color: lightblue; */
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 24px;
+  flex-shrink: 0;
+}
+.upload-icon {
+  height: 24px;
+}
+.apps-icon {
+  height: 24px;
+}
+.notifications-icon {
+  height: 24px;
+}
+.account-icon {
+  height: 32px;
+  border-radius: 50%;
 }
