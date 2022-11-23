@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nested Flexbox</title>
+    <style>
+      .a13 {
+        display: flex;
+      }
+      .a13-pink {
+        background-color: lightpink;
+        width: 100px;
+        display: flex;
+        /* align-items: center; */
+        justify-content: center;
+      }
+      .a13-pink p {
+        background-color: black;
+        color: white;
+      }
+      .a13-blue {
+        background-color: lightblue;
+        width: 200px;
+      }
+
+      .b13 {
+        margin-top: 30px;
+        height: 52px;
+        display: flex;
+      }
+      .b13-blue {
+        background-color: lightblue;
+        width: 100px;
+      }
+      .b13-pink {
+        background-color: lightpink;
+        width: 200px;
+      }
+      .b13-pink-row2 {
+        display: flex;
+        /* align-items: center; */
+        justify-content: space-between;
+      }
+      .b13-pink-row2 div {
+        color: white;
+        background-color: black;
+      }
+
+      .c13 {
+        margin-top: 30px;
+        width: 450px;
+        font-family: Arial, Helvetica, sans-serif;
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 5px;
+        border-color: lightgray;
+        box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.15);
+        padding: 15px 21px 10px 21px;
+      }
+      .inbox-categories {
+        color: gray;
+        margin-bottom: 24px;
+      }
+      .inbox-content {
+        display: flex;
+        align-items: center;
+        margin-bottom: 24px;
+      }
+      .account-pic img {
+        width: 60px;
+        height: 60px;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+      .mail-summary {
+        flex: 1;
+      }
+      .email-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 5px;
+      }
+      .email-title {
+        font-weight: bold;
+        font-size: 20px;
+      }
+      .email-time {
+        color: gray;
+        font-size: 15px;
+      }
+      .email-sub-title {
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+      .email-content-peek {
+        color: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="a13">
+      <div class="a13-pink">
+        <p>item1</p>
+      </div>
+      <div class="a13-blue"></div>
+    </div>
+
+    <div class="b13">
+      <div class="b13-blue"></div>
+      <div class="b13-pink">
+        <div>row1</div>
+        <div class="b13-pink-row2">
+          <div>row2</div>
+          <div>row2</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="c13">
+      <div class="inbox-categories">ALL INBOXES</div>
+      <div class="inbox-content">
+        <div class="account-pic"><img src="grumpy-cat.jpg" alt="" /></div>
+        <div class="mail-summary">
+          <div class="email-head">
+            <div class="email-title">Chewy Promotions</div>
+            <div class="email-time">4:58 PM</div>
+          </div>
+          <div class="email-sub-title">Biggest sales of the year!</div>
+          <div class="email-content-peek">
+            Hey there! We're writing to tell you about our...
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="c13">
+      <div class="inbox-categories">ALL INBOXES</div>
+      <div class="inbox-content">
+        <div class="account-pic"><img src="grumpy-cat.jpg" alt="" /></div>
+        <div class="mail-summary">
+          <div class="email-head">
+            <div class="email-title">Chewy Promotions</div>
+            <div class="email-time">4:58 PM</div>
+          </div>
+          <div class="email-sub-title">Biggest sales of the year!</div>
+          <div class="email-content-peek">
+            Hey there! We're writing to tell you about our...
+          </div>
+        </div>
+      </div>
+
+      <div class="inbox-content">
+        <div class="account-pic"><img src="grumpy-cat.jpg" alt="" /></div>
+        <div class="mail-summary">
+          <div class="email-head">
+            <div class="email-title">Best Buy</div>
+            <div class="email-time">12:32 PM</div>
+          </div>
+          <div class="email-sub-title">Your Best Buy eReceipt</div>
+          <div class="email-content-peek">
+            Thank you for shopping at Best Buy, here is...
+          </div>
+        </div>
+      </div>
+
+      <div class="inbox-content">
+        <div class="account-pic"><img src="grumpy-cat.jpg" alt="" /></div>
+        <div class="mail-summary">
+          <div class="email-head">
+            <div class="email-title">Netflix</div>
+            <div class="email-time">9:00 AM</div>
+          </div>
+          <div class="email-sub-title">
+            Here's what's coming soon to Netflix
+          </div>
+          <div class="email-content-peek">
+            Brand new movies and shows, old favorites...
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
