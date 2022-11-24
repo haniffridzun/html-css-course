@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position</title>
+  </head>
+  <body
+    style="
+      height: 2000px;
+      padding-top: 45px;
+      padding-left: 80px;
+      padding-right: 80px;
+    "
+  >
+    <div
+      style="
+        background-color: black;
+        color: white;
+        height: 36px;
+        position: fixed;
+        top: 0;
+        left: 0px;
+        right: 0px;
+        z-index: 100;
+      "
+    >
+      header
+    </div>
+
+    <div
+      style="
+        background-color: lightgreen;
+        color: black;
+        width: 70px;
+        position: fixed;
+        top: 36px;
+        left: 0;
+        bottom: 0;
+      "
+    >
+      sidebar
+      <div
+        style="
+          background-color: red;
+          color: white;
+          position: absolute;
+          top: 0;
+          right: 0;
+        "
+      >
+        X
+      </div>
+    </div>
+
+    <div
+      style="
+        background-color: lightgreen;
+        width: 50px;
+        position: fixed;
+        top: 36px;
+        right: 0;
+        bottom: 0;
+      "
+    >
+      sidebar
+    </div>
+
+    <div
+      style="
+        background-color: red;
+        color: white;
+        position: absolute;
+        top: 43px;
+        right: 60px;
+      "
+    >
+      absolute
+    </div>
+    <div
+      style="
+        background-color: lightblue;
+        width: 200px;
+        height: 200px;
+        position: static;
+      "
+    >
+      div 1
+    </div>
+    <div
+      style="
+        background-color: lightpink;
+        width: 200px;
+        height: 200px;
+        position: relative;
+      "
+    >
+      div 2
+      <div
+        style="
+          background-color: black;
+          color: white;
+          position: absolute;
+          right: 8px;
+          bottom: 8px;
+        "
+      >
+        relative>absolute
+      </div>
+    </div>
+
+    <div
+      style="
+        background-color: black;
+        color: white;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+      "
+    >
+      bottom-right
+    </div>
+  </body>
+</html>
