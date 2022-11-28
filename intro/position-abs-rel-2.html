@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position Exercise</title>
+    <style>
+      body {
+        height: 3000px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .button-container {
+        position: absolute;
+        right: 9px;
+      }
+      .close-button {
+        background-color: black;
+        color: white;
+        padding: 5px 8px 3px 8px;
+        border-radius: 16px;
+      }
+
+      .shape-container {
+        position: fixed;
+        right: 9px;
+        bottom: 9px;
+      }
+      .rectangle-shape {
+        background-color: gray;
+        width: 320px;
+        height: 180px;
+      }
+
+      .green-container {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+      .green-rectangle {
+        background-color: lightgreen;
+        width: 320px;
+        height: 180px;
+        position: fixed;
+      }
+      .red-button {
+        background-color: red;
+        color: white;
+        padding: 5px 8px 3px 8px;
+        border-radius: 16px;
+        position: absolute;
+        top: -12px;
+        left: -12px;
+      }
+      .time-box {
+        background-color: black;
+        color: white;
+        padding: 4px 6px;
+        border-radius: 2px;
+        position: absolute;
+        right: 8px;
+        bottom: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="button-container">
+      <div class="close-button">X</div>
+    </div>
+
+    <div class="shape-container">
+      <div class="rectangle-shape"></div>
+    </div>
+
+    <div class="green-container">
+      <div class="green-rectangle">
+        <div class="red-button">X</div>
+        <div class="time-box">0:29</div>
+      </div>
+    </div>
+  </body>
+</html>
