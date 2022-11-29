@@ -89,7 +89,7 @@
   align-items: center;
 }
 .voice-search-icon {
-  /* height: 25px; */
+  height: 25px;
   flex: 1;
 }
 
@@ -121,14 +121,55 @@
   font-size: 11px;
   padding: 1px 5px;
   border-style: solid;
-  border-width: 1px;
+  border-width: 2px;
   border-color: white;
   border-radius: 9px;
   position: absolute;
-  top: -1px;
+  top: 6px;
   left: 12px;
 }
 .account-icon {
   height: 32px;
   border-radius: 50%;
+}
+
+/* top bar icons tooltip */
+.search-button,
+.voice-search-button,
+.upload-icon-container,
+.apps-icon-container,
+.notifications-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.search-button .tooltip,
+.voice-search-button .tooltip,
+.upload-icon-container .tooltip,
+.apps-icon-container .tooltip,
+.notifications-icon-container .tooltip {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-size: 12px;
+  padding: 10px 8px;
+  border-radius: 2px;
+  position: absolute;
+  bottom: -42px;
+  pointer-events: none;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.15s;
+}
+.search-button:hover .tooltip,
+.voice-search-button:hover .tooltip,
+.upload-icon-container:hover .tooltip,
+.apps-icon-container:hover .tooltip,
+.notifications-icon-container:hover .tooltip {
+  opacity: 1;
+}
+.upload-icon-container,
+.apps-icon-container,
+.notifications-icon-container {
+  height: 40px;
 }

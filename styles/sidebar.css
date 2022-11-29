@@ -2,7 +2,30 @@
   background-color: white;
   width: 72px;
   position: fixed;
+  /* padding-top: 5px; */
   top: 55px;
   left: 0;
   bottom: 0;
+  z-index: 200;
+}
+
+.sidebar-link {
+  /* background-color: lightgray; */
+  /* margin-bottom: 1px; */
+  height: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  cursor: pointer;
+}
+.sidebar-link:hover {
+  background-color: rgb(245, 245, 245);
+}
+.sidebar-link img {
+  height: 26px;
+  margin-bottom: 4px;
+}
+.sidebar-link div {
+  font-size: 10px;
 }
