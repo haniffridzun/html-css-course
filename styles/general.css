@@ -3,7 +3,7 @@ html {
 }
 body {
   margin: 0;
-  height: 3000px;
+  height: 1500px;
   padding-top: 80px;
   padding-left: 98px;
   padding-right: 24px;
@@ -14,4 +14,13 @@ p {
   font-family: Roboto, Arial, Helvetica, sans-serif;
   margin-top: 0;
   margin-bottom: 0;
+}
+
+a:link,
+a:visited,
+a:link:active,
+a:visited:active {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
