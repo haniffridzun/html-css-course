@@ -75,3 +75,40 @@
   column-gap: 16px;
   row-gap: 40px;
 }
+
+.channel-tooltip-container {
+  width: 36px;
+  position: relative;
+}
+.channel-tooltip-container .channel-tooltip {
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 2px -2px 3px rgba(0, 0, 0, 0.15);
+  padding: 16px 16px 16px 12px;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  position: absolute;
+  top: 46px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.15s;
+  z-index: 100;
+}
+.channel-tooltip-container:hover .channel-tooltip {
+  opacity: 1;
+}
+.channel-tooltip img {
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+.channel-tooltip p:nth-of-type(1) {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+.channel-tooltip p:nth-of-type(2) {
+  /* color: rgb(65, 65, 65); */
+  font-size: 14px;
+}
